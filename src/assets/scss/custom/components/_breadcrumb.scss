@@ -1,0 +1,12 @@
+
+.breadcrumb-item {
+    > a {
+        color: $gray-700;
+    }
+    +.breadcrumb-item {
+        &::before {
+            font-family: "Material Design Icons";
+        }
+    }
+}
+  

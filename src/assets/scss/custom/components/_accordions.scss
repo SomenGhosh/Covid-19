@@ -1,0 +1,11 @@
+
+
+.custom-accordion {
+    .card {
+        box-shadow: none;
+        border: 1px solid lighten($gray-100, 4%) !important;
+        .card-header{
+            background-color: lighten($gray-100, 4%) !important;
+        }
+    }
+}

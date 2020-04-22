@@ -1,0 +1,44 @@
+.progress-sm {
+  height: 5px !important;
+}
+
+.progress-md {
+  height: 8px !important;
+}
+
+.progress-lg {
+  height: 12px !important;
+}
+.progress-xl {
+  height: 15px;
+}
+
+.progress{
+  margin-top: 18px;
+}
+
+.progress-animated {
+  animation-duration: 5s;
+  animation-name: animationProgress;
+  transition: 5s all;
+}
+
+
+
+@each $color,
+$value in $theme-colors {
+    .progress-bar-alt-#{$color} {
+        background-color: rgba(($value), 0.2);
+    }
+}
+
+@-webkit-keyframes animationProgress {
+  from {
+    width:0;
+  }
+}
+@keyframes animationProgress {
+  from {
+    width:0;
+  }
+}
